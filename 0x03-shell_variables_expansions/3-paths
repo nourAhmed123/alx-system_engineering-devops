@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra PATH_DIRS <<< "$PATH" && echo "${#PATH_DIRS[@]}"
+IFS=':' read -ra PATH_DIRS <<< "$PATH"; count=0; for dir in "${PATH_DIRS[@]}"; do ((count++)); done; echo $count
