@@ -1,0 +1,4 @@
+#!/bin/bash
+IFS=':' read -ra PATH_DIRS <<< "$PATH"
+count=${#PATH_DIRS[@]}
+echo $count
